@@ -3,13 +3,13 @@ let expression = "";
 
 function calc(element){
   if(element.innerHTML == "÷"){
-    expression += " " + "/";
+    expression += " " + "/" + " ";
     display.innerHTML = expression;
   }else if(element.innerHTML == "x"){
-    expression += " " + "*";
+    expression += " " + "*" + " ";
     display.innerHTML = expression;
   }else if (element.innerHTML == "+" || element.innerHTML == "-"){
-    expression += " " + element.innerHTML;
+    expression += " " + element.innerHTML + " ";
     display.innerHTML = expression;
   }else if(element.innerHTML == "="){
     expression =  eval(expression);
